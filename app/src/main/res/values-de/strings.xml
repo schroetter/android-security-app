@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="notification_evaluation_name">Testmodus</string>
+
+	<string name="deviceadmin_description">Fernlöschung mittels SMS</string>
+
+	<string name="status_state_active">Aktiv (!)</string>
+	<string name="status_state_ready">Testmodus</string>
+	<string name="status_state_inactive">Inaktiv</string>
+	<string name="status_timestamp">Letzte SMS erhalten:</string>
+	<string name="status_messages">Nachrichtenzähler:</string>
+
+	<string name="switch_permissions">Berechtigungen</string>
+	<string name="switch_deviceadmin">Geräteverwaltung</string>
+	<string name="switch_wipe">Fernlöschung</string>
+
+	<string name="passphrase_mismatch">Die Passphrase wurde nicht korrekt bestätigt!</string>
+	<string name="passphrase_invalid">Bitte gib %d bis %d Zeichen als Passphrase ein.</string>
+	<string name="passphrase_updated">Passphrase gespeichert. Die Fernlöschung ist jetzt aktiv!</string>
+	<string name="passphrase_deleted">Passphrase entfernt. Die Fernlöschung wurde deaktiviert!</string>
+	<string name="passphrase_reused">Die Fernlöschung ist jetzt mit der vorhanden Passphrase aktiv!</string>
+
+	<string name="delete_passphrase_confirmation">Soll die Passphrase wirklich gelöscht werden?\n\nDadurch wird die Fernlöschung deaktiviert!</string>
+	<string name="evaluation_toast">SMS von %s mit übereinstimmender Passphrase empfangen! Ohne Testmodus würden jetzt alle Daten gelöscht werden.\n\nVergiss nicht, die Passphrase zu ändern, bevor die Fernlöschung aktiviert wird. Da sie bereits mittels SMS übertragen wurde, ist sie nicht mehr als geheim anzusehen.</string>
+
+	<string name="enter_passphrase">Passphrase eingeben</string>
+	<string name="confirm_passphrase">Passphrase bestätigen</string>
+	<string name="delete_passphrase">Löschen</string>
+	<string name="update_passphrase">Speichern</string>
+	<string name="add_passphrase">Hinzufügen</string>
+
+	<string name="refresh">Aktualisieren</string>
+</resources>

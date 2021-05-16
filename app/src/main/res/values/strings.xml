@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+	<string name="preference" translatable="false">at.co.schroetter.security.prefs</string>
+	<string name="preference_timestamp" translatable="false">message_timestamp</string>
+	<string name="preference_messages" translatable="false">message_counter</string>
+	<string name="preference_wipe" translatable="false">wipe_enabled</string>
+	<string name="preference_hash" translatable="false">secret_hash</string>
+	<string name="preference_salt" translatable="false">hash_salt</string>
+
+	<string name="app_name" translatable="false">[S]ecurity</string>
+	<string name="app_title" tools:ignore="MissingTranslation">[S]CH: Security App</string>
+	<string name="notification_evaluation_id" translatable="false">1</string>
+	<string name="notification_evaluation_name">Evaluation Mode</string>
+
+	<string name="deviceadmin_name" translatable="false">schroetter.co.at</string>
+	<string name="deviceadmin_description">Remote wipe by SMS</string>
+
+	<string name="switch_permissions">Permissions</string>
+	<string name="switch_deviceadmin">Device Admin</string>
+	<string name="switch_wipe">Remote Wipe</string>
+
+	<string name="passphrase_mismatch">Passphrase and confirmation did not match!</string>
+	<string name="passphrase_invalid" tools:ignore="PluralsCandidate">Please enter %d to %d characters as passphrase.</string>
+	<string name="passphrase_updated">Passphrase saved. Remote wipe feature enabled!</string>
+	<string name="passphrase_deleted">Passphrase removed. Remote wipe feature disabled!</string>
+	<string name="passphrase_reused">Remote wipe feature enabled! Using existing passphrase.</string>
+
+	<string name="delete_passphrase_confirmation">Really delete passphrase?\n\nThis will disable remote wipe feature!</string>
+	<string name="evaluation_toast">Received SMS from %s with matching passphrase! This would wipe your device, but we are only in evaluation mode.\n\nDo not forget to change the passphrase before enabling the remote wipe feature. Since it was sent via SMS it is not secret anymore.</string>
+
+	<string name="enter_passphrase">Enter passphrase</string>
+	<string name="confirm_passphrase">Confirm passphrase</string>
+	<string name="delete_passphrase">Delete</string>
+	<string name="update_passphrase">Update</string>
+	<string name="add_passphrase">Add</string>
+
+	<string name="status_datetime" tools:ignore="MissingTranslation">%s, %s</string>
+	<string name="status_state" tools:ignore="MissingTranslation">Status:</string>
+	<string name="status_state_active">Active (!)</string>
+	<string name="status_state_ready">Evaluation Mode</string>
+	<string name="status_state_inactive">Inactive</string>
+	<string name="status_messages">Number of messages:</string>
+	<string name="status_timestamp">Last SMS received:</string>
+
+	<string name="empty" tools:ignore="MissingTranslation">-</string>
+	<string name="refresh">Refresh</string>
+
+</resources>

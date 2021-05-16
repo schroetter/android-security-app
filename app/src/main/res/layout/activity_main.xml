@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".MainActivity">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		tools:layout_editor_absoluteX="10dp"
+		tools:layout_editor_absoluteY="10dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:padding="10dp"
+			tools:layout_editor_absoluteX="10dp"
+			tools:layout_editor_absoluteY="10dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TableRow
+					style="@style/Setting"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="@string/status_state"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+					<TextView
+						android:id="@+id/status_state"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="end"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+				</TableRow>
+
+				<TableRow
+					style="@style/Setting"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="@string/status_timestamp"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+					<TextView
+						android:id="@+id/status_timestamp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="end"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+				</TableRow>
+
+				<TableRow
+					style="@style/Setting"
+					android:layout_width="match_parent"
+					android:layout_height="match_parent">
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:text="@string/status_messages"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+					<TextView
+						android:id="@+id/status_messages"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:gravity="end"
+						android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+				</TableRow>
+
+			</LinearLayout>
+
+			<Space
+				android:layout_width="match_parent"
+				android:layout_height="10dp" />
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:background="@drawable/settings_bg"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:orientation="vertical">
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/switch_permissions"
+						style="@style/Setting"
+						android:text="@string/switch_permissions"
+						android:textSize="18sp" />
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/switch_deviceadmin"
+						style="@style/Setting"
+						android:enabled="false"
+						android:text="@string/switch_deviceadmin" />
+
+					<androidx.appcompat.widget.SwitchCompat
+						android:id="@+id/switch_wipe"
+						style="@style/Setting"
+						android:enabled="false"
+						android:text="@string/switch_wipe" />
+				</LinearLayout>
+
+
+				<LinearLayout
+					android:id="@+id/password"
+					style="@style/Setting"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+
+					<View style="@style/Divider" />
+
+					<TableLayout
+						android:layout_width="match_parent"
+						android:layout_height="match_parent">
+
+						<com.google.android.material.textfield.TextInputLayout
+							style="@style/Setting"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:hint="@string/enter_passphrase"
+							app:passwordToggleEnabled="true">
+
+							<com.google.android.material.textfield.TextInputEditText
+								android:id="@+id/passphrase1"
+								android:nextFocusForward="@+id/passphrase2"
+								android:nextFocusDown="@+id/passphrase2"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:inputType="textPassword" />
+						</com.google.android.material.textfield.TextInputLayout>
+
+						<com.google.android.material.textfield.TextInputLayout
+							style="@style/Setting"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:hint="@string/confirm_passphrase"
+							app:passwordToggleEnabled="true">
+
+							<com.google.android.material.textfield.TextInputEditText
+								android:id="@+id/passphrase2"
+								android:nextFocusForward="@+id/button_update"
+								android:nextFocusDown="@+id/button_update"
+								android:layout_width="match_parent"
+								android:layout_height="match_parent"
+								android:inputType="textPassword" />
+						</com.google.android.material.textfield.TextInputLayout>
+
+						<TableRow
+							android:layout_width="fill_parent"
+							android:layout_height="match_parent">
+
+							<Button
+								android:id="@+id/button_delete"
+								style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+								android:nextFocusForward="@+id/passphrase1"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:layout_margin="10dp"
+								android:layout_weight="1"
+								android:text="@string/delete_passphrase" />
+
+							<Button
+								android:id="@+id/button_update"
+								style="@style/Widget.MaterialComponents.Button"
+								android:nextFocusForward="@+id/button_delete"
+								android:layout_width="0dp"
+								android:layout_height="wrap_content"
+								android:layout_margin="10dp"
+								android:layout_weight="1" />
+						</TableRow>
+
+					</TableLayout>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
